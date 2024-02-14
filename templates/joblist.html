@@ -1,0 +1,8 @@
+
+<div class="job_list" style="border-bottom: 0.4px; border-bottom-style: solid; margin-bottom: 30px">
+    <div><h2 style="margin: 0px; margin-bottom: 10px">{{job['title']}}</h2></div>
+    <div>Location: {{job['Location']}}</div>
+    {% if 'salary' in job %}
+    <div>Salary: {{job['salary']}}</div>
+    {% endif %} 
+</div>

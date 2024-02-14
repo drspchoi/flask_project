@@ -12,6 +12,12 @@
         <!--<img src="./static/Picture.jpg" alt="Suzi" height="100">
         <img src="Picture.jpg" height="100">-->
         <h1>Are you looking for a job?</h1>
+    
+    </div>
+    <div style="width: 80%">
+        {% for job in job %}
+        {% include 'joblist.html' %}
+        {% endfor %}
     </div>
     <div style="text-align: center; margin: auto">
     <button>Contact me you fucker!</button>

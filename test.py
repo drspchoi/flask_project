@@ -1,11 +1,22 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app=Flask("__name__")
+
+JOBS=[
+    {'ID':1,'title':'Junior Engineer1', 'Location':'Seoul','salary':'10000'},
+    {'ID':2,'title':'Junior Engineer2', 'Location':'Seoul','salary':'10000'},
+    {'ID':3,'title':'Junior Engineer3', 'Location':'Seoul','salary':'10000'},
+    {'ID':4,'title':'Junior Engineer4', 'Location':'Seoul','salary':'10000'},
+]
 
 @app.route("/")
 def hello_world():
     #return "Hello you mother fucker!"
-    return render_template("index.html")
+    return render_template("index.html",job=JOBS)
+
+@app.route("/api/jobs")
+def databank():
+    return jsonify(JOBS)
 
 @app.route("/main")
 def main():

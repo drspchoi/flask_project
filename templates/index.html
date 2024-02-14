@@ -3,11 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>I am learing Flask</title>
+        <link rel="stylesheet" href="./static/style.css">
     </head>
     <body>
-        <img src="{{ url_for('static', filename='Picture.jpg')}}" alt="Suzi" height="100">
-        <img src="./static/Picture.jpg" height="100">
-        <img src="Picture.jpg" height="100">
-        <h1>you mother fucker!</h1>
+    <div class="container">
+        <h1>You mother fucker!</h1>
+        <img src="{{ url_for('static', filename='Picture.jpg')}}" alt="Suzi">
+        <!--<img src="./static/Picture.jpg" alt="Suzi" height="100">
+        <img src="Picture.jpg" height="100">-->
+        <h1>Are you looking for a job?</h1>
+    </div>
+    <div style="text-align: center; margin: auto">
+    <button>Contact me you fucker!</button>
+    <p>Copyright Julius Choi 2024</p>
+    </div>
     </body>
 </html>

@@ -9,8 +9,11 @@ def hello_world():
 
 @app.route("/main")
 def main():
-    return "you fuck ass hole"
+    Result=plus(2,3)
+    return "you fuck ass hole "+str(Result)
 
+def plus(a,b):
+    return a+b
 
 if __name__=="__main__":
     app.run(host="0.0.0.0", debug=True)
